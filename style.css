@@ -300,7 +300,7 @@ h2{
     flex-wrap: wrap;
     padding: 0 80px;
 }
-#banner3{
+#banner3 .banner-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -725,8 +725,83 @@ footer .copyright{
   #cart table tbody  td{
     font-size: 13px;
   }
-  #cart-add{
+  #cart-add {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  #coupon{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  #coupon h3,
+  #subtotal h3{
+    padding-bottom: 15px;
+  }
+  #coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #003959;
+  }
+  #coupon button,
+  #subtotal button{
+    background-color: #0dcfc2;
+    color: #222;
+    padding: 12px 20px;
+  }
+  #subtotal{
+    width: 30%;
+    margin-bottom: 30px;
+    border: 1px solid #003959;
+    padding: 30px;
+  }
+  #subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: start;
+  }
+  #subtotal table td{
+    width: 50%;
+    border: 1px solid #003959;
+    padding: 10px;
+    font-size: 13px;
+    text-align: start;
+  }
+
+
+
+
+  /*start media query*/
+  @media(max-width: 799px){
+    .section-p9{
+        padding: 40px 80px;
+    }
+  
+  #hero{
+    height: 70vh;
+        width:100%;
+        padding:0 80px;
+        background-position:top 30% right 30%;     
+  }
+  #feature{
+    justify-content: center;
+  }      
+  #feature .fe-box{
+    margin: 15px 15px;
+  }     
+  
+    #product1 .pro-container {  
+        justify-content:center;  
+    }
+    #product1 .pro {  
+        margin: 15px ;   
+    }
+    #sm-banner .banner-box {  
+        min-width: 100px;
+        height: 30vh;
+    }
+  
+}
