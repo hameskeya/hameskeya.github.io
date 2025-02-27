@@ -64,13 +64,14 @@
     </div>
 </section>
 <section id="form-details">
-    <form action="">
+    <form action="https://api.web3forms.com/submit" method="POST">
         <span>LEAVE A MESSAGE </span>
         <h2>We love to hear from you.</h2>
-        <input type="text" placeholder="yourName">
-        <input type="text" placeholder="Email">
-        <input type="text" placeholder="subject">
-        <textarea name="" id="" cols="30" rows="10" placeholder="yourmessage"></textarea>
+        <input type="hidden" name="access_key" value="ee42ca70-7202-4b69-bf54-8bb559329941">
+        <input type="text" name="name" placeholder="Your_Name" class="contact-inputs" required>
+        <input type="text" name="email" placeholder="Email" class="contact-inputs" required>
+        <input type="text" name="subject" placeholder="Subject" class="contact-inputs" required>
+        <textarea name="Message" id="" cols="30" rows="10" placeholder="yourmessage" class="contact-inputs" required></textarea>
         <button class="normal">Submit</button>
     </form>
     <div class="people">
